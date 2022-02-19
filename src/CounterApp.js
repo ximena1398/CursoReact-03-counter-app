@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import PropTypes from 'prop-types';
 
-const CounterApp = ({ value }) => { //desestructuración de elementos props: en este caso saludo que ya viene de index.js
+const CounterApp = ({ value = 10 }) => { //desestructuración de elementos props: en este caso saludo que ya viene de index.js
     const [counter, setCounter] = useState(value);
 
     //Evento botón
